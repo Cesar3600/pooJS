@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>APPform</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-light bg-light mb-2">
+          <a class="navbar-brand" href="#">
+            App <em>form</em>
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <h6 class="card-header">Form</h6>
+          <div class="card-body">
+            <form id="form-product"class="mb-3">
+              <div class="form-group">
+                <label for="name">Product Name</label>
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="productName">
+                <small id="productName" class="form-text text-muted">Nombre del producto.</small>
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" name="description" class="form-control" id="description" aria-describedby="productDescription">
+                <small id="productDescription" class="form-text text-muted">Descripcion del producto.</small>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="price">Price</label>
+                  <input type="number" name="price" step="0.01" class="form-control" id="price" aria-describedby="productPrice">
+                  <small id="productPrice" class="form-text text-muted">Precio del Producto.</small>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="year">Year</label>
+                  <input type="number" min="1977" max="2053" name="year" class="form-control" id="year" aria-describedby="productYear">
+                  <small id="productYear" class="form-text text-muted">Año de fabricación.</small>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-info btn-block btn-lg">Save</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <div id="validate-msj">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="list-group" class="col-md-8">
+        <div class="list-group">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
